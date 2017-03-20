@@ -10,11 +10,11 @@ For instance -
 
 #### Bad/confusing/offputting:
 
-![bad](http://devblog.jasonhuck.com/assets/NextGenFormStyle/Firefox_3_nostyle.png)
+![bad](img/unstyled-form.png)
 
 #### Good/understandable/pleasant:
 
-![good](http://www.formassembly.com/blog/wp-content/uploads/2015/05/best-web-forms.png)
+![good](img/best-web-forms.png)
 
 
 ### Description
