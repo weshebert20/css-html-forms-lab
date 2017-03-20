@@ -27,7 +27,7 @@ The design the client is asking for is loosely based on [Bootstrap's Form CSS](h
 
 <details>
 <summary>Still stumped? The end result should look something like this . . .</summary>
-	![](img/example.png)
+	<img src="img/example.png"/>
 </details>
 
 
