@@ -25,9 +25,12 @@ They've given you the basic framework, with pseudo-code detailing how they want 
 
 The design the client is asking for is loosely based on [Bootstrap's Form CSS](https://v4-alpha.getbootstrap.com/components/forms/). Feel Free to use this as a visual guide for "best practice". 
 
-Still stumped? The end result should look something like this:
+<details>
+<summary>Still stumped? The end result should look something like this . . .</summary>
+	![](img/example.png)
+</details>
 
-![](img/example.png)
+
 
 
 ### Technical Requirements
