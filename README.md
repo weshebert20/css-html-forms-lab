@@ -1,8 +1,4 @@
 # CSS/HTML Forms Lab
-
-
----
-
  
 ### Intro
 
@@ -20,10 +16,6 @@ For instance -
 
 ![good](http://www.formassembly.com/blog/wp-content/uploads/2015/05/best-web-forms.png)
 
-<br>
-
----
-
 
 ### Description
 
@@ -33,18 +25,11 @@ They've given you the basic framework, with pseudo-code detailing how they want 
 
 The design the client is asking for is loosely based on [Bootstrap's Form CSS](https://v4-alpha.getbootstrap.com/components/forms/). Feel Free to use this as a visual guide for "best practice". 
 
-
----
-
-
 ### Technical Requirements
 
 - Fill in the JS pseudo-code so that the form works
 - Style the form elements according to the descriptions in the CSS file so that it looks nice
 - On submit, the form should render the information from the form on the page
-
-
----
 
 ### BONUS!
 
