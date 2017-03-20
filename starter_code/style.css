@@ -8,7 +8,7 @@
 /* 
 	Use Google Fonts to make all of the text Proza Libre.
 
-	Make the Title twice as large as the body text, bold, and spaced evenly.
+	Make the Title twice as large as the body text, bold, and give it some nice margin.
 */
 
 /*-------- Main Styles --------*/
@@ -16,7 +16,7 @@
 /* 
 	Make the main container the full width of the page.
 
-	Make the two inner container (the form and the results) align side by side, on the left side of the screen.
+	Make the two inner containers (the form and the results) float side by side, on the left side of the screen.
 
 	Every container, form, input, and button should have rounded corners.
 */
