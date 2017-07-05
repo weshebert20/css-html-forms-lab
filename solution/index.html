@@ -97,12 +97,16 @@
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 	<script type="text/javascript">
 
-		var main = document.querySelector('#main');
+		var main = $('#main');
 		function makeResults() {
-			var results = document.createElement('section');
-			results.innerHTML = '<h1>' + 'A true story:' + '</h1>';
-			results.className = 'container results';
-			main.appendChild(results);
+
+			$( "<section class='container results'><h1>A True Story:</h1>" ).appendTo(main);
+
+			// JS Native:
+			// var results = document.createElement('section');
+			// results.innerHTML = '<h1>' + 'A true story:' + '</h1>';
+			// results.className = 'container results';
+			// main.appendChild(results);
 		};
 
 		$("form").on("submit", function(event){
@@ -111,17 +115,17 @@
 	    	makeResults();
 		    
 			var name = $("#name").val(); 
-			$('.results').append( document.createTextNode( "Once upon a time there was a Developer named " + name + ". " ) );
+			$( "<p>Once upon a time there was a Developer named " + name + ". </p>" ).appendTo('.results');
 			
 			var verb1 = $("#verb-1").val(); 
-			$('.results').append( document.createTextNode( name +" came to General Asssembly to " + verb1 + " the great mountain of programming knowledge. " ) );
+			$( "<p>" + name + " came to General Asssembly to " + verb1 + " the great mountain of programming knowledge.</p>" ).appendTo('.results');
 
 			var missionStatement = $("#mission").val(); 
-			$('.results').append( document.createTextNode( "\"" + missionStatement + "\", " + name + " shouted. " ) );
+			$( "<p>\"" + missionStatement + "\", " + name + " shouted.</p>" ).appendTo('.results');
 
 			var sentiment = $("input[name=sentiment]:checked").val(); 
 			var noun1 = $("#noun-1").val();
-			$('.results').append( document.createTextNode( "Though " + sentiment +  ", " + name + " was able to overcome all obstacles with the power of their " + noun1 + ". " ) );
+			$( "<p>Though " + sentiment +  ", " + name + " was able to overcome all obstacles with the power of their " + noun1 + ". </p>" ).appendTo('.results');
 
 			var adjective2 = [];
 			$('input[name="adjective-2"]:checked').each(function() {
@@ -129,7 +133,7 @@
 
 			});
 			var noun2 = $("#noun-2").val(); 
-			$('.results').append( document.createTextNode( "In the end, their success can be contributed entirely to their " + adjective2 + " " + noun2 + "." ) );
+			$( "<p>In the end, their success can be contributed entirely to their" + adjective2 + " " + noun2 + ".</p>" ).appendTo('.results');
 
     	});
 	</script>
