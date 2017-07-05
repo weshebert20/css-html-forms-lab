@@ -96,12 +96,16 @@
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 	<script type="text/javascript">
 
-		var main = document.querySelector('#main');
+		var main = $('#main');
 		function makeResults() {
-			var results = document.createElement('section');
-			results.innerHTML = '<h1>' + 'A true story:' + '</h1>';
-			results.className = 'container results';
-			main.appendChild(results);
+
+			$( "<section class='container results'><h1>A True Story:</h1>" ).appendTo(main);
+
+			// JS Native:
+			// var results = document.createElement('section');
+			// results.innerHTML = '<h1>' + 'A true story:' + '</h1>';
+			// results.className = 'container results';
+			// main.appendChild(results);
 		};
 
 		$("form").on("submit", function(event){

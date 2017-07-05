@@ -2,7 +2,7 @@
  
 ### Intro
 
-In a web development role, you might find yourself asked to perform multiple roles - such as implementation AND basic design of a web page. In cases like these, its important to be able to mock up simple interfaces that match current design standards - whether or not they're perfectly designed or not. 
+In a web dev job, you might find yourself asked to perform multiple roles - such as implementation AND basic design of a web page. In cases like these, its important to be able to mock up simple interfaces that match current design standards - whether or not they're "perfectly" designed or not. 
 
 Even if you don't consider yourself "artistically inclined", its important to be able to mimic basic design patterns seen in modern websites. This way, clients/users testing your code have some idea what to expect from their interaction with your work. Otherwise, your client might take bad design to mean "bad code".
 
@@ -35,7 +35,7 @@ The design the client is asking for is loosely based on [Bootstrap's Form CSS](h
 
 ### Technical Requirements
 
-- Fill in the JS pseudo-code so that the form works
+- Fill in the JS pseudo-code so that the form works - **with jQuery!**
 - Style the form elements according to the descriptions in the CSS file so that it looks nice
 - On submit, the form should render the information from the form on the page
 
