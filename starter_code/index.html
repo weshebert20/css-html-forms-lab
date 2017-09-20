@@ -3,6 +3,7 @@
 <head>
 	<title>CSS HTML Forms Lab</title>
 	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre:400,600,800" rel="stylesheet">
 </head>
 <body>
 	<section id="main">
@@ -84,35 +85,60 @@
 				    	<input id="noun-2" name="noun-2">
 					</div>
 					<div class="row formGroup">
-				    	<input type="submit">
+				    	<input id="button" type="submit">
 				    </div>
 				    
 			    </div>
 			</form>
+			
 		</section>
 	</section>
 	
+	<div class="results">
+		<h2></h2>
+		<p></p>
+	</div>
 
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 	<script type="text/javascript">
 
-		var main = $('#main');
+		var main = $('.results');
 		function makeResults() {
 
-			$( "<section class='container results'><h1>A True Story:</h1>" ).appendTo(main);
+			$( "<section class='results' id='headerTwo'><h2>A True Story:</h2>" ).appendTo(main);
 
 			// JS Native:
-			// var results = document.createElement('section');
-			// results.innerHTML = '<h1>' + 'A true story:' + '</h1>';
-			// results.className = 'container results';
-			// main.appendChild(results);
+				// var results = document.createElement('section');
+				// results.innerHTML = '<h1>' + 'A true story:' + '</h1>';
+				// results.className = 'container results';
+				// main.appendChild(results);
 		};
 
 		$("form").on("submit", function(event){
 
 		    // Stop the form from submitting
+		    event.preventDefault();
 
 	    	// Run the 'makeResults' function seen above
+	    	makeResults();
+	    	// var formData = $('form').serialize();
+	    	// console.log(formData);
+
+	    	var nameEntered = $('#name').val(); 
+	    	var verb = $('#verb-1').val();
+	    	var mission = $('#mission').val();
+	    	var radio = $(":radio:checked").val();	    	
+	    	var noun = $('#noun-1').val();
+	    	var checked = $('input[name=adjective-2]:checked').map(function(){return this.value})
+				.get().join(", ");
+	    	var nounSecond = $('#noun-2').val();
+
+	    	$(main).append('<p>').attr('id', 'paragraph').append('Once upon a time there was a Developer named ' + nameEntered + ". " + nameEntered + ' came to General Assembly to ' + verb + ' the great mountain of programming knowledge. "' + mission + '", ' + nameEntered + ' shouted. Though ' + radio + ', ' + nameEntered + ' was able to overcome all obstacles with the power of their ' + noun + '. In the end, their success can be contributed entirely to their ' + checked + " " + nounSecond);
+
+
+
+
+	   
 
 	    	/*
 			
