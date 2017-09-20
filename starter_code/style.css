@@ -155,7 +155,7 @@ label {
 
 
 #paragraph {
-	float: right;
+	float: left;
 	width: 48%;
 	max-width: 500px;
 	background-color: #C8DBB3;
